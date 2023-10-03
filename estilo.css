@@ -1,0 +1,204 @@
+html {
+    font-family: sans-serif;
+
+    background-image: url(https://img.olhardigital.com.br/wp-content/uploads/2019/09/20190910100427.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: initial;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+.header {
+    text-align: center;
+    margin: 0;
+    background-color: #0D0D0D;
+}
+
+.header_logo {
+    width: 7em;
+    height: 100%;
+    margin: 1em;
+}
+
+.header_nav {
+    background-color: #0D0D0D;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+.header_nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover {
+    background-color: rgba(185, 203, 244, 0.91);
+    color: #0D0D0D;
+}
+
+#hamburguer {
+    background-color: #7087d5;
+    color: #0D0D0D;
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.header_nav {
+    display: none;
+}
+
+.header_nav.show {
+    display: block;
+}
+
+@media screen and (min-width: 48em) {
+
+    #hamburguer {
+        display: none;
+    }
+
+    html {
+        background-image: url(https://cdn.pixabay.com/animation/2022/11/16/14/56/14-56-49-778_512.gif);
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: initial;
+    }
+
+    .header_logo {
+        margin-left: 2em;
+        background-color: initial;
+    }
+
+    .header_nav {
+        display: block;
+        background-color: initial;
+    }
+
+    .header_nav ul {
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header_nav li {
+        display: inline-block;
+        background-color: initial;
+    }
+
+    .header_nav a {
+        border-radius: 5px;
+
+    }
+
+    .header_nav a:hover {
+        background-color: #2921a0;
+        color: #ffffff;
+    }
+
+    .header {
+        text-align: center;
+        margin: auto;
+        background-color: #0D0D0D;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header_f {
+        flex-direction: column;
+        /* Muda para coluna */
+        align-items: center;
+    }
+}
+
+
+/*.footer{
+        display:grid;
+        justify-content: space-between;
+        align-items: center;
+        display:inline-block;
+    }
+
+    .header_f ul{
+        margin-right: 2em;
+        font-size: .9em;
+        display:inline-block;
+    }
+
+    .header_f li{
+        display:inline-block;
+    }*/
+
+/*  .header_f {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }*/
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #2f2e2e77;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0;
+}
+
+p {
+    flex-direction: column;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+
+.header_f {
+    color: rgb(234, 234, 234);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.header_f li {
+    margin-right: 2em;
+}
+
+.header_f a {
+    display: block;
+}
+
+.icone_link {
+    width: 1.4em;
+    margin: 0;
+    justify-content: space-between;
+}
